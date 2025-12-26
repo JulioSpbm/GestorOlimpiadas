@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="536.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.laboratorio.olimpiadas.gestaoolimpiadas.controller.ManageGamesController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" style="-fx-font-weight: bold;" text="⚔ Manage Games">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableViewProvas" layoutX="13.0" layoutY="124.0" prefHeight="396.0" prefWidth="770.0" style="-fx-background-color: #D3D3D3;" stylesheets="@tableview.css">
+         <columns>
+            <TableColumn fx:id="colStartDateProva" prefWidth="174.0" text="Start Date" />
+            <TableColumn fx:id="colEndDateProva" prefWidth="180.0" text="End Date" />
+            <TableColumn fx:id="colLocalProva" prefWidth="160.0" text="Local" />
+            <TableColumn fx:id="colSportProva" prefWidth="122.0" text="Sport" />
+            <TableColumn fx:id="colCapacityProva" prefWidth="133.0" text="Capacity" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

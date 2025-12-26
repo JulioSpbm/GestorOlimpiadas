@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<SplitPane fx:id="splitpane" orientation="VERTICAL" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <items>
+      <TableView fx:id="tableViewRegModalidades" maxHeight="584.0" maxWidth="430.0" prefHeight="430.0" prefWidth="584.0" style="-fx-background-color: #ECECEC;" stylesheets="@tableview.css">
+         <columns>
+            <TableColumn fx:id="colRegModName" prefWidth="133.0" text="Name" />
+            <TableColumn fx:id="colRegModGenre" prefWidth="123.3333740234375" text="Genre" />
+            <TableColumn fx:id="colRegModType" prefWidth="145.3333740234375" text="Type" />
+         </columns>
+         <padding>
+            <Insets bottom="10.0" left="10.0" top="10.0" />
+         </padding>
+      </TableView>
+   </items>
+
+</SplitPane>

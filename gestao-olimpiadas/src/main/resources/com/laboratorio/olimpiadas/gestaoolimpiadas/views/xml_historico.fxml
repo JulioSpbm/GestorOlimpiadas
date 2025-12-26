@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<SplitPane fx:id="splitpane" orientation="VERTICAL" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.laboratorio.olimpiadas.gestaoolimpiadas.controller.XMLImporterController">
+
+   <TableView fx:id="tableViewHist" prefHeight="550.0" prefWidth="500.0" style="-fx-background-color: #ECECEC;" stylesheets="@tableview.css" SplitPane.resizableWithParent="false" VBox.vgrow="ALWAYS">
+      <columns>
+         <TableColumn fx:id="colHistData" prefWidth="153.0" text="Data" />
+         <TableColumn fx:id="colHistUtilizador" minWidth="4.0" prefWidth="177.0" text="Utilizador" />
+         <TableColumn fx:id="colHistFicheiro" prefWidth="166.0" text="Ficheiro" />
+      </columns>
+      <padding>
+         <Insets bottom="10.0" left="10.0" top="10.0" />
+      </padding>
+   </TableView>
+
+</SplitPane>

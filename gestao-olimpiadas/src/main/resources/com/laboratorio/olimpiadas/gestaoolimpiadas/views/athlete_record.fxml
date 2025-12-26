@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.laboratorio.olimpiadas.gestaoolimpiadas.controller.RecordAthleteController">
+   <center>
+      <AnchorPane fx:id="recordPane" prefHeight="308.0" prefWidth="500.0" style="-fx-background-color: #f0f0f0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="149.0" layoutY="39.0" style="-fx-font-weight: bold;" text="Athlete Record">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+             <TableView fx:id="tableViewRecordes" layoutX="13.0" layoutY="111.0" prefHeight="370.0" prefWidth="475.0">
+                 <columns>
+                     <TableColumn fx:id="colAthlete" prefWidth="175.0" text="Athlete" />
+                     <TableColumn fx:id="colRecordeAthlete" prefWidth="150.0" text="Record" />
+                     <TableColumn fx:id="colAnoAthlete" prefWidth="150.0" text="Year" />
+                 </columns>
+             </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

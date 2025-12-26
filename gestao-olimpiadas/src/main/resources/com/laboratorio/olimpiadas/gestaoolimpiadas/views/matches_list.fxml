@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<SplitPane fx:id="splitpane" dividerPositions="0.8795986622073578" orientation="VERTICAL" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.laboratorio.olimpiadas.gestaoolimpiadas.controller.PartidaController">
+
+   <TableView fx:id="tableViewMatch" maxWidth="663.0" prefHeight="523.0" prefWidth="663.0" style="-fx-background-color: #ECECEC;" stylesheets="@tableview.css" SplitPane.resizableWithParent="false" VBox.vgrow="ALWAYS">
+      <columns>
+         <TableColumn fx:id="colMatEvent" prefWidth="149.0" text="Evento" />
+         <TableColumn fx:id="colMatLocal" prefWidth="161.0" text="Local" />
+         <TableColumn fx:id="colMatModalidade" prefWidth="166.0" text="Modalidade" />
+         <TableColumn fx:id="colMatData" prefWidth="177.0" text="Data" />
+      </columns>
+      <padding>
+         <Insets bottom="10.0" left="10.0" top="10.0" />
+      </padding>
+   </TableView>
+
+   <VBox alignment="CENTER" spacing="15.0" style="-fx-background-color: #ECECEC;" VBox.vgrow="ALWAYS">
+      <Button fx:id="btnDeleteMatch" style="-fx-background-color: #808080; -fx-font-weight: bold; -fx-font-size: 15px;" text="Delete Match" textFill="WHITE">
+      </Button>
+   </VBox>
+
+</SplitPane>

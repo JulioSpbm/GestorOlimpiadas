@@ -1,0 +1,3 @@
+jdbc:sqlserver://ctespbd.dei.isep.ipp.pt;databaseName=2024_LP3_G3_ERMESINDE;encrypt=false
+2024_LP3_G3_ERMESINDE
+123G3FJJMA.
